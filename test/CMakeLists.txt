@@ -1,10 +1,15 @@
 add_executable(
     skipperctest
-    constants/pi.c
+    test.c
 )
 
 target_link_libraries(
     skipperctest
     PRIVATE
     skipperc
+)
+
+add_test(
+    NAME skipperctest
+    COMMAND skipperctest
 )
